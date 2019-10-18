@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="form-group col-sm-6">
+    <%= form_for(@reservation) do |f| %>
+      <div class="form-group row">
+        <%= f.text_field :name ,placeholder:"Nombre completo", class:"form-control"%>
+      </div>
+      <div class="form-group row">
+        <%= f.text_field :email ,placeholder:"Correo", class:"form-control"%>
+      </div>
+      <div class="form-group row">
+        <%= f.text_field :identification_card ,placeholder:"Cédula", class:"form-control"%>
+      </div>
+      <div class="form-group row">
+        <%= f.number_field :phone ,placeholder:"Teléfono", class:"form-control"%>
+      </div>
+      <div class="form-group row" style="float:right">
+        <%= f.submit "Crear Película",class:"btn btn-primary"%>
+      </div>
+    <% end %>
+    <%= link_to "Ver todas las películas", api_v1_movies_path %>
+   </div>
+  </div>
+</div>

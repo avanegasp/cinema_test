@@ -1,0 +1,27 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Días de presentación</th>
+        <th scope="col">Película</th>
+      </tr>
+    </thead>
+    <% count = 0 %>
+    <tbody>
+      <tr>
+        <%@movies.each do |movie|%>
+          <th scope="row"><%= count+=1 %></th>
+          <td><%=movie.name_movie%></td>
+          <td><%=movie.description%>
+          <td><%=movie.presentation_days%></td>
+          <td><img src="<%= movie.url_movie%>" class="card-img-top" alt="..." style="width:208px;"></td>
+    </tr>
+        <%end%>
+    </tbody>
+  </table>
+  <%= link_to 'Crear Nueva Película', new_api_v1_movie_path, class: 'btn btn-primary btn-lg' %>
+</div>
