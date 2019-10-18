@@ -1,4 +1,4 @@
-class Api::V1::MoviesController < ApplicationController
+class Api::V1::PeliculasController < ApplicationController
 
   def index
     @movies = Movie.all

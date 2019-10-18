@@ -1,4 +1,4 @@
-class Api::V1::ReservationsController < ApplicationController
+class Api::V1::ReservacionesController < ApplicationController
 
   def new
     @reservation = Reservation.new
