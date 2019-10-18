@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_movie: MyString
+  description: MyString
+  url_movie: MyString
+  presentation_days: MyString
+
+two:
+  name_movie: MyString
+  description: MyString
+  url_movie: MyString
+  presentation_days: MyString
